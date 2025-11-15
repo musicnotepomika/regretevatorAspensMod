@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "regretaspens:item/eye_aspen_sapling"
+  }
+}
