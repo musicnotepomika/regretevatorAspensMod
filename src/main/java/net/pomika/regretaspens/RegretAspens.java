@@ -14,6 +14,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.pomika.regretaspens.block.ModBlocks;
+import net.pomika.regretaspens.item.ModCreativeModTabs;
 import net.pomika.regretaspens.item.ModItems;
 import org.slf4j.Logger;
 
@@ -32,6 +33,9 @@ public class RegretAspens
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
+
+        // Register the creative mode tabs
+        ModCreativeModTabs.register(modEventBus);
 
         // Register the mod items
         ModItems.register(modEventBus);
@@ -63,6 +67,7 @@ public class RegretAspens
 
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
             event.accept(ModBlocks.EYE_ASPEN_PLANKS);
+            event.accept(ModBlocks.EYE_ASPEN_WOOD);
         }
     }
 

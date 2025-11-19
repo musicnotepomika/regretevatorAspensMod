@@ -1,4 +1,6 @@
 {
   "item.regretaspens.eye_aspen_sapling": "Eye Aspen Sapling",
-  "block.regretaspens.eye_aspen_planks": "Eye Aspen Planks"
+  "block.regretaspens.eye_aspen_planks": "Eye Aspen Planks",
+  "block.regretaspens.eye_aspen_wood": "Eye Aspen Wood",
+  "creativetab.regretaspens.regretevator_aspens": "Regretevator Aspens"
 }
